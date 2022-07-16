@@ -1,0 +1,21 @@
+﻿using System;
+
+// Token: 0x02000009 RID: 9
+[Flags]
+public enum AllocationType : uint
+{
+	// Token: 0x0400001A RID: 26
+	COMMIT = 4096U,
+	// Token: 0x0400001B RID: 27
+	RESERVE = 8192U,
+	// Token: 0x0400001C RID: 28
+	RESET = 524288U,
+	// Token: 0x0400001D RID: 29
+	LARGE_PAGES = 536870912U,
+	// Token: 0x0400001E RID: 30
+	PHYSICAL = 4194304U,
+	// Token: 0x0400001F RID: 31
+	TOP_DOWN = 1048576U,
+	// Token: 0x04000020 RID: 32
+	WRITE_WATCH = 2097152U
+}

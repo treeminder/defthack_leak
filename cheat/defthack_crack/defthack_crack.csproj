@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{EAC6A444-0A5A-4E36-BD04-1C727B5F06CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>88bbecc3-9a33-4164-b07a-100ce6e1444n.tmp</RootNamespace>
+    <AssemblyName>defthack_crack</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="com.rlabrecque.steamworks.net">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\com.rlabrecque.steamworks.net.dll</HintPath>
+    </Reference>
+    <Reference Include="HighlightingSystem">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\HighlightingSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.Glazier.Runtime">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\SDG.Glazier.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetPak.Runtime">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\SDG.NetPak.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.NetTransport">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\SDG.NetTransport.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\EgguWare-Unturned-master\real\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Unturned\Unturned_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\Documents\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AimbotComponent.cs" />
+    <Compile Include="AimbotCoroutines.cs" />
+    <Compile Include="AimbotOptions.cs" />
+    <Compile Include="AimbotTab.cs" />
+    <Compile Include="AllocationType.cs" />
+    <Compile Include="AssetManager.cs" />
+    <Compile Include="AssetVariables.cs" />
+    <Compile Include="AttributeManager.cs" />
+    <Compile Include="ColorOptions.cs" />
+    <Compile Include="ColorsTab.cs" />
+    <Compile Include="ColorUtilities.cs" />
+    <Compile Include="ColorVariable.cs" />
+    <Compile Include="ComponentAttribute.cs" />
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="CoroutineComponent.cs" />
+    <Compile Include="Drawing.cs" />
+    <Compile Include="DrawUtilities.cs" />
+    <Compile Include="DropDown.cs" />
+    <Compile Include="ESPBox.cs" />
+    <Compile Include="ESPBox2.cs" />
+    <Compile Include="ESPComponent.cs" />
+    <Compile Include="ESPCoroutines.cs" />
+    <Compile Include="ESPObject.cs" />
+    <Compile Include="ESPOptions.cs" />
+    <Compile Include="ESPTarget.cs" />
+    <Compile Include="ESPTargetEng.cs" />
+    <Compile Include="ESPVariables.cs" />
+    <Compile Include="ESPVisual.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="FriendUtilities.cs" />
+    <Compile Include="Hotkey.cs" />
+    <Compile Include="HotkeyComponent.cs" />
+    <Compile Include="HotkeyOptions.cs" />
+    <Compile Include="HotkeyTab.cs" />
+    <Compile Include="HotkeyUtilities.cs" />
+    <Compile Include="IcoSphere.cs" />
+    <Compile Include="InitializerAttribute.cs" />
+    <Compile Include="InteractionOptions.cs" />
+    <Compile Include="ItemCoroutines.cs" />
+    <Compile Include="ItemOptionList.cs" />
+    <Compile Include="ItemOptions.cs" />
+    <Compile Include="ItemsComponent.cs" />
+    <Compile Include="ItemUtilities.cs" />
+    <Compile Include="LabelLocation.cs" />
+    <Compile Include="LoaderCoroutines.cs" />
+    <Compile Include="LocalBounds.cs" />
+    <Compile Include="LocationUtilities.cs" />
+    <Compile Include="MainThreadDispatcherComponent.cs" />
+    <Compile Include="MathUtilities.cs" />
+    <Compile Include="MemoryProtection.cs" />
+    <Compile Include="MenuComponent.cs" />
+    <Compile Include="MenuTabOption.cs" />
+    <Compile Include="MenuUtilities.cs" />
+    <Compile Include="MirrorCameraComponent.cs" />
+    <Compile Include="MirrorCameraOptions.cs" />
+    <Compile Include="MiscComponent.cs" />
+    <Compile Include="MiscOptions.cs" />
+    <Compile Include="MiscTab.cs" />
+    <Compile Include="MiscTabs.cs" />
+    <Compile Include="MoreMiscTab.cs" />
+    <Compile Include="NearestPointTest.cs" />
+    <Compile Include="OffSpyAttribute.cs" />
+    <Compile Include="OnSpyAttribute.cs" />
+    <Compile Include="OptimizationOptions.cs" />
+    <Compile Include="OptimizationVariables.cs" />
+    <Compile Include="OptionsTab.cs" />
+    <Compile Include="OverrideAttribute.cs" />
+    <Compile Include="OverrideManager.cs" />
+    <Compile Include="OverrideType.cs" />
+    <Compile Include="OverrideUtilities.cs" />
+    <Compile Include="OverrideWrapper.cs" />
+    <Compile Include="OV_Cursor.cs" />
+    <Compile Include="OV_DamageTool.cs" />
+    <Compile Include="OV_Input.cs" />
+    <Compile Include="OV_ItemManager.cs" />
+    <Compile Include="OV_LevelLighting.cs" />
+    <Compile Include="OV_MenuPauseUI.cs" />
+    <Compile Include="OV_Physics.cs" />
+    <Compile Include="OV_Player.cs" />
+    <Compile Include="OV_PlayerDashboardInformationUI.cs" />
+    <Compile Include="OV_PlayerDashboardInventoryUI.cs" />
+    <Compile Include="OV_PlayerEquipment.cs" />
+    <Compile Include="OV_PlayerInput.cs" />
+    <Compile Include="OV_PlayerInteract.cs" />
+    <Compile Include="OV_PlayerLifeUI.cs" />
+    <Compile Include="OV_PlayerLook.cs" />
+    <Compile Include="OV_PlayerPauseUI.cs" />
+    <Compile Include="OV_PlayerUI.cs" />
+    <Compile Include="OV_Provider.cs" />
+    <Compile Include="OV_UseableBarricade.cs" />
+    <Compile Include="OV_UseableGun.cs" />
+    <Compile Include="OV_UseableMelee.cs" />
+    <Compile Include="OV_UseableStructure.cs" />
+    <Compile Include="PlayerCoroutines.cs" />
+    <Compile Include="PlayersTab.cs" />
+    <Compile Include="Prefab.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RadarComponent.cs" />
+    <Compile Include="RadarOptions.cs" />
+    <Compile Include="RaycastComponent.cs" />
+    <Compile Include="RaycastCoroutines.cs" />
+    <Compile Include="RaycastOptions.cs" />
+    <Compile Include="RaycastUtilities.cs" />
+    <Compile Include="ReflectionVariables.cs" />
+    <Compile Include="SaveAttribute.cs" />
+    <Compile Include="SerializableColor.cs" />
+    <Compile Include="SerializableVector.cs" />
+    <Compile Include="SerializableVector2.cs" />
+    <Compile Include="Skin.cs" />
+    <Compile Include="SkinConfig.cs" />
+    <Compile Include="SkinOptionList.cs" />
+    <Compile Include="SkinOptions.cs" />
+    <Compile Include="SkinsTab.cs" />
+    <Compile Include="SkinType.cs" />
+    <Compile Include="SosiHui\BinaryOperationBinder.cs" />
+    <Compile Include="SpammerThread.cs" />
+    <Compile Include="SpectatorComponent.cs" />
+    <Compile Include="SphereOptions.cs" />
+    <Compile Include="SphereUtilities.cs" />
+    <Compile Include="SpyComponentAttribute.cs" />
+    <Compile Include="SpyManager.cs" />
+    <Compile Include="StatsTab.cs" />
+    <Compile Include="TargetMode.cs" />
+    <Compile Include="TargetPriority.cs" />
+    <Compile Include="ThreadAttribute.cs" />
+    <Compile Include="TracerLine.cs" />
+    <Compile Include="TrajectoryComponent.cs" />
+    <Compile Include="TriggerbotComponent.cs" />
+    <Compile Include="TriggerbotOptions.cs" />
+    <Compile Include="VanishPlayerComponent.cs" />
+    <Compile Include="VectorUtilities.cs" />
+    <Compile Include="VertTriList.cs" />
+    <Compile Include="VisualsTab.cs" />
+    <Compile Include="WeaponComponent.cs" />
+    <Compile Include="WeaponOptions.cs" />
+    <Compile Include="WeaponSave.cs" />
+    <Compile Include="WeaponsTab.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
