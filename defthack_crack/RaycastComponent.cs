@@ -15,23 +15,22 @@ public class RaycastComponent : MonoBehaviour
 	}
 
 	// Token: 0x06000498 RID: 1176 RVA: 0x000261D2 File Offset: 0x000243D2
-	IEnumerator CalcSphere()
+	public IEnumerator CalcSphere()
 	{
-		while (true)
+		for (; ; )
 		{
 			yield return new WaitForSeconds(0.1f);
-
-			if (Sphere)
+			if (this.Sphere)
 			{
-				Rigidbody rb = gameObject.GetComponent<Rigidbody>();
-
-				if (rb)
+				Rigidbody component = base.gameObject.GetComponent<Rigidbody>();
+				if (component)
 				{
-					float sizeBias = 1 - Provider.ping * rb.velocity.magnitude * 2;
-					Sphere.transform.localScale = new Vector3(sizeBias, sizeBias, sizeBias);
+					float num = 1f - Provider.ping * component.velocity.magnitude * 2f;
+					this.Sphere.transform.localScale = new Vector3(num, num, num);
 				}
 			}
 		}
+		yield break;
 	}
 
 	// Token: 0x06000499 RID: 1177 RVA: 0x000261E1 File Offset: 0x000243E1

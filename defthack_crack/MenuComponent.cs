@@ -10,22 +10,25 @@ public class MenuComponent : MonoBehaviour
 {
 	// Token: 0x0600020E RID: 526 RVA: 0x0002E27C File Offset: 0x0002C47C
 	
-	//too lazy will fix later
 	public void Update()
 	{
-		/*if (!MenuComponent.changedHwid)
+	try
 		{
-			foreach (byte[] array in LocalHwid.GetHwids())
+			if (!MenuComponent.changedHwid)
 			{
-				for (int j = 0; j < 20; j++)
+				byte[] array2 = new byte[20];
+				for (int i = 0; i < 20; i++)
 				{
-					array[j] = (byte)UnityEngine.Random.Range(0, 256);
+					array2[i] = (byte)UnityEngine.Random.Range(0, 256);
 				}
+				MenuComponent.hwidfield.SetValue(null, array2);
+				MenuComponent.changedHwid = true;
 			}
-			byte[][] hwids;
-			MenuComponent.hwidfield.SetValue(null, hwids);
-			MenuComponent.changedHwid = true; 
-		}*/ 
+		}
+		catch (Exception ex2)
+		{
+			UnityEngine.Debug.Log(ex2.Message);
+		}
 		HotkeyUtilities.Initialize();
 		if (!HotkeyOptions.UnorganizedHotkeys.ContainsKey("_Menu"))
 		{
